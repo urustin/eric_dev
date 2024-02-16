@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+
+    var type=navigator.appName
+    if (type=="Netscape")
+    var lang = navigator.language
+    else
+    var lang = navigator.userLanguage
+
+    // 국가코드에서 앞 2글자만 자름
+    var lang = lang.substr(0,2)
+
+    // 영어인 경우
+    if (lang == "ko")
+    window.location.replace('https://naver.com')
+
+
+    // 위의 어느것도 아닌경우 (디폴트 페이지)
+    else
+    window.location.replace('https://google.com')
+
+</script>
+</head>
+<body>
+ 
+    
+</body>
+</html>
